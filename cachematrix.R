@@ -1,12 +1,10 @@
 ## Tow functions that cache the inverse of a matrix
-
-
 ## Creates a matrix that can cache its inverse
 makeCacheMatrix <- function( x = matrix() ) {
-  
+ 
   ## assigned to a variable inv
   inv <- NULL 
-  
+ 
   ## set the value of the matrix
   set <- function( matrix ) {
     x <<- y
@@ -26,9 +24,9 @@ makeCacheMatrix <- function( x = matrix() ) {
   list(set = set, get = get,setInverse = setInverse,getInverse = getInverse)
 }
 
-
 ## this is used to get the cache data
 cacheSolve <- function(x, ...) {
+  
   ## returns a matrix that is inverse of X and assigns to inv
   inv <- x$getInverse() 
   
